@@ -1,0 +1,14 @@
+FROM public.ecr.aws/lambda/python:3.12
+
+# Copy requirements and install them into the Lambda task root
+COPY requirements.txt ${LAMBDA_TASK_ROOT}
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy your code and model artifacts into the Lambda task root
+COPY main.py ${LAMBDA_TASK_ROOT}
+COPY utils.py ${LAMBDA_TASK_ROOT}
+COPY models/ ${LAMBDA_TASK_ROOT}/models/
+COPY data/ ${LAMBDA_TASK_ROOT}/data/
+
+# Set the command to your Mangum handler (file_name.handler_variable)
+CMD [ "main.handler" ]

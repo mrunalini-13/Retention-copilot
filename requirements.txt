@@ -1,0 +1,38 @@
+
+# LAMBDA + FASTAPI + MACHINE LEARNING
+
+fastapi==0.162.0
+uvicorn==0.54.0
+joblib==1.6.0
+pandas==3.1.0
+numpy==2.4.6
+scikit-learn==1.9.1
+mangum==0.22.0
+
+# AWS SDK
+boto3
+
+# RAG + VECTOR DATABASE
+chromadb==1.5.9
+pypdf==6.21.4
+
+# LANGCHAIN + AMAZON BEDROCK
+langchain
+langchain-core
+langchain-aws
+langchain-community
+
+# MCP SERVER + CLIENT
+mcp==2.3.0
+langchain-mcp-adapters
+
+# CREWAI MULTI-AGENT
+crewai
+
+# LANGGRAPH MULTI-AGENT SUPERVISOR
+langgraph
+langgraph-supervisor
+
+# RAG EVALUATION
+ragas==0.4.1
+openpyxl
