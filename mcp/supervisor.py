@@ -171,7 +171,7 @@ def protect_create_case(original_tool):
 
 async def main():
 
-    server_path = Path(__file__).resolve().parent / "server.py"
+    server_path = Path(__file__).resolve().parent / "mcp_server.py"
 
     server_params = StdioServerParameters(
         command=sys.executable,

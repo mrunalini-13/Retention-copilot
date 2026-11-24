@@ -11,6 +11,7 @@ mangum==0.22.0
 
 # AWS SDK
 boto3
+bedrock-agentcore
 
 # RAG + VECTOR DATABASE
 chromadb==1.5.9
@@ -32,6 +33,12 @@ crewai
 # LANGGRAPH MULTI-AGENT SUPERVISOR
 langgraph
 langgraph-supervisor
+langgraph-checkpoint-postgres
+langgraph-checkpoint-aws
+psycopg[binary]
+
+#langsmith
+langsmith==0.14.17
 
 # RAG EVALUATION
 ragas==0.4.1
